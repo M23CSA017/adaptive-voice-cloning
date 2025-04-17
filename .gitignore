@@ -1,0 +1,5 @@
+data
+tortoises/voices/*
+adaptive-voice-cloning/openvoice/accent_transfer/data/*
+*.wav
+/home/m23csa017/adaptive-voice-cloning/src/results/*

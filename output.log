@@ -1,0 +1,1636 @@
+nohup: ignoring input
+INFO:speechbrain.utils.quirks:Applied quirks (see `speechbrain.utils.quirks`): [allow_tf32, disable_jit_profiling]
+INFO:speechbrain.utils.quirks:Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/functional.py:650: UserWarning: stft with return_complex=False is deprecated. In a future pytorch release, stft will return complex tensors for all inputs, and return_complex=False will raise an error.
+Note: you can still call torch.view_as_real on the complex output to recover the old return format. (Triggered internally at ../aten/src/ATen/native/SpectralOps.cpp:863.)
+  return _VF.stft(input, n_fft, hop_length, win_length, window,  # type: ignore[attr-defined]
+[INFO] Generating + evaluating: canadian_english_neutral
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=neutral, Accent=canadian_english
+[INFO] Emotion-specific voice folder: custom
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.42it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.54it/s]
+ 50%|█████     | 3/6 [00:01<00:01,  1.52it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.45it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.47it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.32it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.27it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.95it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.74it/s]
+100%|██████████| 6/6 [00:00<00:00,  8.07it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.66it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.90it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.71it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.15it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.40it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.57it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.66it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.74it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.79it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.85it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.90it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.94it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.95it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.96it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.98it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.00it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.01it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 36.08it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.12it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.19it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.73it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_canadian_english.wav
+[INFO] Generating + evaluating: filipino_neutral
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=neutral, Accent=filipino
+[INFO] Emotion-specific voice folder: custom
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.35it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.43it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.46it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.47it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.51it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.48it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.30it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.24it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.92it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.70it/s]
+100%|██████████| 6/6 [00:00<00:00,  8.03it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  4%|▍         | 3/80 [00:00<00:02, 28.06it/s]
+  9%|▉         | 7/80 [00:00<00:02, 32.55it/s]
+ 14%|█▍        | 11/80 [00:00<00:02, 33.88it/s]
+ 19%|█▉        | 15/80 [00:00<00:01, 34.55it/s]
+ 24%|██▍       | 19/80 [00:00<00:01, 34.93it/s]
+ 29%|██▉       | 23/80 [00:00<00:01, 35.13it/s]
+ 34%|███▍      | 27/80 [00:00<00:01, 35.28it/s]
+ 39%|███▉      | 31/80 [00:00<00:01, 35.36it/s]
+ 44%|████▍     | 35/80 [00:01<00:01, 35.42it/s]
+ 49%|████▉     | 39/80 [00:01<00:01, 35.48it/s]
+ 54%|█████▍    | 43/80 [00:01<00:01, 35.52it/s]
+ 59%|█████▉    | 47/80 [00:01<00:00, 35.56it/s]
+ 64%|██████▍   | 51/80 [00:01<00:00, 35.57it/s]
+ 69%|██████▉   | 55/80 [00:01<00:00, 35.59it/s]
+ 74%|███████▍  | 59/80 [00:01<00:00, 35.60it/s]
+ 79%|███████▉  | 63/80 [00:01<00:00, 35.61it/s]
+ 84%|████████▍ | 67/80 [00:01<00:00, 35.60it/s]
+ 89%|████████▉ | 71/80 [00:02<00:00, 35.61it/s]
+ 94%|█████████▍| 75/80 [00:02<00:00, 35.61it/s]
+ 99%|█████████▉| 79/80 [00:02<00:00, 35.66it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.24it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_filipino.wav
+[INFO] Generating + evaluating: nigerian_accent_neutral
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=neutral, Accent=nigerian_accent
+[INFO] Emotion-specific voice folder: custom
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.42it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]
+ 50%|█████     | 3/6 [00:01<00:01,  1.53it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.51it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.47it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.48it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.27it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.18it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.87it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.67it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.99it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.46it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.95it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.82it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.27it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.53it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.70it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.80it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.86it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.91it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.95it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 36.00it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.02it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.03it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.06it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.05it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.07it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.09it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 36.09it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.79it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_nigerian_accent.wav
+[INFO] Generating + evaluating: scottish_english_neutral
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=neutral, Accent=scottish_english
+[INFO] Emotion-specific voice folder: custom
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.46it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.48it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.51it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.49it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.26it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.21it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.88it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.65it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.99it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.59it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.99it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.85it/s]
+ 20%|██        | 16/80 [00:00<00:01, 34.87it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 34.46it/s]
+ 30%|███       | 24/80 [00:00<00:01, 34.23it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 34.09it/s]
+ 40%|████      | 32/80 [00:00<00:01, 34.01it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 33.95it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 33.90it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 33.86it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 33.87it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 33.87it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 33.87it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 33.86it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 33.85it/s]
+ 85%|████████▌ | 68/80 [00:02<00:00, 33.05it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 31.17it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 29.97it/s]
+100%|██████████| 80/80 [00:02<00:00, 30.46it/s]
+100%|██████████| 80/80 [00:02<00:00, 32.95it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_scottish_english.wav
+[INFO] Generating + evaluating: united_states_english_neutral
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=neutral, Accent=united_states_english
+[INFO] Emotion-specific voice folder: custom
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.51it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.56it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.47it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.47it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.53it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.46it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.48it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.15it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.10it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.77it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.57it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.89it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.88it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.17it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.99it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.41it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.66it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.79it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.89it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.97it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.99it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 36.03it/s]
+ 55%|█████▌    | 44/80 [00:01<00:00, 36.07it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.10it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.13it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.15it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.12it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.14it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.16it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 36.16it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.17it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.19it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.89it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_united_states_english.wav
+[INFO] Generating + evaluating: canadian_english_happy
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=happy, Accent=canadian_english
+[INFO] Emotion-specific voice folder: custom_happy
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.48it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.47it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.45it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.46it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.44it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.44it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.11it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.09it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.77it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.55it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.88it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.19it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.40it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.19it/s]
+ 20%|██        | 16/80 [00:00<00:01, 34.58it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 34.81it/s]
+ 30%|███       | 24/80 [00:00<00:01, 34.96it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 34.89it/s]
+ 40%|████      | 32/80 [00:00<00:01, 34.98it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.06it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.12it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.17it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.20it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.13it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 34.89it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 34.83it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 34.90it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 34.99it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 35.05it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 35.06it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 34.87it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_happy_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_canadian_english.wav
+[INFO] Generating + evaluating: filipino_happy
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=happy, Accent=filipino
+[INFO] Emotion-specific voice folder: custom_happy
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:04,  1.22it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.41it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.39it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.46it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.48it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.48it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.44it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.25it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.18it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.86it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.64it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.97it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.88it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.18it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 35.01it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.38it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.63it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.78it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.87it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.93it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.97it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 36.01it/s]
+ 55%|█████▌    | 44/80 [00:01<00:00, 36.03it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.07it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.08it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.01it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.06it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.07it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.10it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 36.09it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.84it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_happy_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_filipino.wav
+[INFO] Generating + evaluating: nigerian_accent_happy
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=happy, Accent=nigerian_accent
+[INFO] Emotion-specific voice folder: custom_happy
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.50it/s]
+ 50%|█████     | 3/6 [00:01<00:01,  1.53it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.55it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.55it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.53it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.22it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.17it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.85it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.63it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.96it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  4%|▍         | 3/80 [00:00<00:03, 23.77it/s]
+  9%|▉         | 7/80 [00:00<00:02, 30.43it/s]
+ 14%|█▍        | 11/80 [00:00<00:02, 32.84it/s]
+ 19%|█▉        | 15/80 [00:00<00:01, 34.04it/s]
+ 24%|██▍       | 19/80 [00:00<00:01, 34.74it/s]
+ 29%|██▉       | 23/80 [00:00<00:01, 35.18it/s]
+ 34%|███▍      | 27/80 [00:00<00:01, 35.45it/s]
+ 39%|███▉      | 31/80 [00:00<00:01, 35.63it/s]
+ 44%|████▍     | 35/80 [00:01<00:01, 35.75it/s]
+ 49%|████▉     | 39/80 [00:01<00:01, 35.85it/s]
+ 54%|█████▍    | 43/80 [00:01<00:01, 35.89it/s]
+ 59%|█████▉    | 47/80 [00:01<00:00, 35.93it/s]
+ 64%|██████▍   | 51/80 [00:01<00:00, 35.95it/s]
+ 69%|██████▉   | 55/80 [00:01<00:00, 35.99it/s]
+ 74%|███████▍  | 59/80 [00:01<00:00, 35.99it/s]
+ 79%|███████▉  | 63/80 [00:01<00:00, 36.00it/s]
+ 84%|████████▍ | 67/80 [00:01<00:00, 35.99it/s]
+ 89%|████████▉ | 71/80 [00:02<00:00, 35.99it/s]
+ 94%|█████████▍| 75/80 [00:02<00:00, 35.99it/s]
+ 99%|█████████▉| 79/80 [00:02<00:00, 36.00it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.30it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_happy_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_nigerian_accent.wav
+[INFO] Generating + evaluating: scottish_english_happy
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=happy, Accent=scottish_english
+[INFO] Emotion-specific voice folder: custom_happy
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.33it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]
+ 50%|█████     | 3/6 [00:02<00:01,  1.52it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.58it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.59it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.62it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.57it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.20it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  7.98it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.64it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.56it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.84it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.90it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.03it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.92it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.40it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.68it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.80it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.86it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.89it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.92it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.96it/s]
+ 55%|█████▌    | 44/80 [00:01<00:00, 36.01it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.04it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.07it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.09it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.11it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.11it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.11it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 36.11it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.83it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_happy_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_scottish_english.wav
+[INFO] Generating + evaluating: united_states_english_happy
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=happy, Accent=united_states_english
+[INFO] Emotion-specific voice folder: custom_happy
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.46it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.50it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.50it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.53it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.50it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00,  9.62it/s]
+ 50%|█████     | 3/6 [00:00<00:00,  8.39it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  7.87it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.59it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.43it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.79it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.85it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.08it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.83it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.21it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.45it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.60it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.68it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.74it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.79it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.83it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.89it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.91it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.93it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.93it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.96it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 35.96it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 35.96it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 35.95it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 35.95it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.92it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.68it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_happy_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_united_states_english.wav
+[INFO] Generating + evaluating: canadian_english_angry
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=angry, Accent=canadian_english
+[INFO] Emotion-specific voice folder: custom_angry
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.32it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.46it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.44it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.44it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.49it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.56it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.50it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.26it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.16it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.83it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.61it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.94it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.78it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.90it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.69it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.14it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.39it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.60it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.69it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.76it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.81it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.86it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.90it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.93it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.97it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.98it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.03it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.03it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.05it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 36.04it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.03it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.04it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.71it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_angry_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_canadian_english.wav
+[INFO] Generating + evaluating: filipino_angry
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=angry, Accent=filipino
+[INFO] Emotion-specific voice folder: custom_angry
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.39it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.43it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.37it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.45it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.42it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.12it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.09it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.77it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.56it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.88it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.58it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.74it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.52it/s]
+ 20%|██        | 16/80 [00:00<00:01, 34.91it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.16it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.30it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.39it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.47it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.52it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.58it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.60it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.48it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.38it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.20it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.08it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 35.08it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 35.18it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 35.30it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 35.46it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.56it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.23it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_angry_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_filipino.wav
+[INFO] Generating + evaluating: nigerian_accent_angry
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=angry, Accent=nigerian_accent
+[INFO] Emotion-specific voice folder: custom_angry
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.43it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]
+ 50%|█████     | 3/6 [00:01<00:01,  1.55it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.57it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.63it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.58it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.57it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.12it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.10it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.77it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.55it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.88it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.62it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.91it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.71it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.14it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 34.17it/s]
+ 30%|███       | 24/80 [00:00<00:01, 31.44it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 31.45it/s]
+ 40%|████      | 32/80 [00:00<00:01, 32.71it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 33.64it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 34.11it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 34.63it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.04it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.34it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.54it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.61it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 35.75it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 35.88it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 35.97it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.03it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.07it/s]
+100%|██████████| 80/80 [00:02<00:00, 34.70it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_angry_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_nigerian_accent.wav
+[INFO] Generating + evaluating: scottish_english_angry
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=angry, Accent=scottish_english
+[INFO] Emotion-specific voice folder: custom_angry
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.34it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.46it/s]
+ 50%|█████     | 3/6 [00:02<00:01,  1.50it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.48it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.44it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.46it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.22it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.13it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.81it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.50it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.87it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.56it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.86it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.64it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.06it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.30it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.46it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.55it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.62it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.67it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.70it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.73it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.76it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.78it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.79it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.80it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 35.81it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 35.82it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 35.80it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 35.80it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.68it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.51it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_angry_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_scottish_english.wav
+[INFO] Generating + evaluating: united_states_english_angry
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=angry, Accent=united_states_english
+[INFO] Emotion-specific voice folder: custom_angry
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.46it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.44it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.43it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.45it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.44it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.18it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.14it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.81it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.59it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.92it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  4%|▍         | 3/80 [00:00<00:03, 24.03it/s]
+  8%|▊         | 6/80 [00:00<00:02, 26.95it/s]
+ 12%|█▎        | 10/80 [00:00<00:02, 31.05it/s]
+ 18%|█▊        | 14/80 [00:00<00:01, 33.01it/s]
+ 22%|██▎       | 18/80 [00:00<00:01, 34.10it/s]
+ 28%|██▊       | 22/80 [00:00<00:01, 34.72it/s]
+ 32%|███▎      | 26/80 [00:00<00:01, 35.09it/s]
+ 38%|███▊      | 30/80 [00:00<00:01, 35.14it/s]
+ 42%|████▎     | 34/80 [00:01<00:01, 35.43it/s]
+ 48%|████▊     | 38/80 [00:01<00:01, 35.54it/s]
+ 52%|█████▎    | 42/80 [00:01<00:01, 35.71it/s]
+ 57%|█████▊    | 46/80 [00:01<00:00, 35.88it/s]
+ 62%|██████▎   | 50/80 [00:01<00:00, 36.00it/s]
+ 68%|██████▊   | 54/80 [00:01<00:00, 36.11it/s]
+ 72%|███████▎  | 58/80 [00:01<00:00, 36.16it/s]
+ 78%|███████▊  | 62/80 [00:01<00:00, 36.21it/s]
+ 82%|████████▎ | 66/80 [00:01<00:00, 36.25it/s]
+ 88%|████████▊ | 70/80 [00:02<00:00, 36.28it/s]
+ 92%|█████████▎| 74/80 [00:02<00:00, 36.31it/s]
+ 98%|█████████▊| 78/80 [00:02<00:00, 36.27it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.14it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_angry_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_united_states_english.wav
+[INFO] Generating + evaluating: canadian_english_sad
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=sad, Accent=canadian_english
+[INFO] Emotion-specific voice folder: custom_sad
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.41it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.49it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.53it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.49it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.47it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.47it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.21it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.15it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.83it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.61it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.94it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.95it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.24it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 35.11it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.55it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.83it/s]
+ 30%|███       | 24/80 [00:00<00:01, 36.01it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 36.13it/s]
+ 40%|████      | 32/80 [00:00<00:01, 36.19it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 36.25it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 36.29it/s]
+ 55%|█████▌    | 44/80 [00:01<00:00, 36.32it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.35it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.35it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.35it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.37it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.39it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.38it/s]
+ 90%|█████████ | 72/80 [00:01<00:00, 36.39it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.41it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.40it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.10it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_sad_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_canadian_english.wav
+[INFO] Generating + evaluating: filipino_sad
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=sad, Accent=filipino
+[INFO] Emotion-specific voice folder: custom_sad
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.43it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.41it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.46it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.49it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.57it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.57it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.52it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.15it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.12it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.80it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.59it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.91it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.38it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.56it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.37it/s]
+ 20%|██        | 16/80 [00:00<00:01, 34.83it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.06it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.23it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.32it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.39it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.44it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.47it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.51it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 35.52it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 35.55it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.56it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.59it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 35.60it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 34.88it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 32.80it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 32.40it/s]
+100%|██████████| 80/80 [00:02<00:00, 33.26it/s]
+100%|██████████| 80/80 [00:02<00:00, 34.56it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_sad_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_filipino.wav
+[INFO] Generating + evaluating: nigerian_accent_sad
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=sad, Accent=nigerian_accent
+[INFO] Emotion-specific voice folder: custom_sad
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.53it/s]
+ 50%|█████     | 3/6 [00:01<00:01,  1.53it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.55it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.54it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.50it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.51it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.19it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.12it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.80it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.59it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.91it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.76it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.00it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.83it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.25it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.52it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.67it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.75it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.83it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 35.89it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 35.93it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 35.98it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.03it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.08it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.12it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.14it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.14it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.14it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 36.14it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.13it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.11it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.81it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_sad_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_nigerian_accent.wav
+[INFO] Generating + evaluating: scottish_english_sad
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=sad, Accent=scottish_english
+[INFO] Emotion-specific voice folder: custom_sad
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.47it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.41it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.49it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.53it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.55it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.56it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.53it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.29it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.19it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.85it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.63it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.97it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 32.08it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.38it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 35.20it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.59it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.83it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.97it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 36.08it/s]
+ 40%|████      | 32/80 [00:00<00:01, 36.13it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 36.17it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 36.22it/s]
+ 55%|█████▌    | 44/80 [00:01<00:00, 36.28it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.31it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.33it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 34.59it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 32.80it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 33.16it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 34.06it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 34.71it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 35.19it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.55it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.24it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_sad_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_scottish_english.wav
+[INFO] Generating + evaluating: united_states_english_sad
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=sad, Accent=united_states_english
+[INFO] Emotion-specific voice folder: custom_sad
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.37it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.44it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.43it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.44it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.43it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.42it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.18it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.12it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.78it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.55it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.89it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  4%|▍         | 3/80 [00:00<00:02, 29.95it/s]
+  9%|▉         | 7/80 [00:00<00:02, 33.40it/s]
+ 14%|█▍        | 11/80 [00:00<00:02, 34.42it/s]
+ 19%|█▉        | 15/80 [00:00<00:01, 34.88it/s]
+ 24%|██▍       | 19/80 [00:00<00:01, 34.28it/s]
+ 29%|██▉       | 23/80 [00:00<00:01, 32.29it/s]
+ 34%|███▍      | 27/80 [00:00<00:01, 31.12it/s]
+ 39%|███▉      | 31/80 [00:00<00:01, 31.28it/s]
+ 44%|████▍     | 35/80 [00:01<00:01, 32.43it/s]
+ 49%|████▉     | 39/80 [00:01<00:01, 33.35it/s]
+ 54%|█████▍    | 43/80 [00:01<00:01, 34.02it/s]
+ 59%|█████▉    | 47/80 [00:01<00:00, 34.49it/s]
+ 64%|██████▍   | 51/80 [00:01<00:00, 34.81it/s]
+ 69%|██████▉   | 55/80 [00:01<00:00, 35.05it/s]
+ 74%|███████▍  | 59/80 [00:01<00:00, 35.23it/s]
+ 79%|███████▉  | 63/80 [00:01<00:00, 35.32it/s]
+ 84%|████████▍ | 67/80 [00:01<00:00, 35.41it/s]
+ 89%|████████▉ | 71/80 [00:02<00:00, 35.49it/s]
+ 94%|█████████▍| 75/80 [00:02<00:00, 35.54it/s]
+ 99%|█████████▉| 79/80 [00:02<00:00, 35.55it/s]
+100%|██████████| 80/80 [00:02<00:00, 34.23it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_sad_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_united_states_english.wav
+[INFO] Generating + evaluating: canadian_english_fear
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=fear, Accent=canadian_english
+[INFO] Emotion-specific voice folder: custom_fear
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.42it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.49it/s]
+ 50%|█████     | 3/6 [00:01<00:01,  1.53it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.55it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.56it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.54it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.53it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.26it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.15it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.81it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.60it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.93it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 32.10it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.40it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 35.23it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.66it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.90it/s]
+ 30%|███       | 24/80 [00:00<00:01, 36.05it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 36.14it/s]
+ 40%|████      | 32/80 [00:00<00:01, 36.21it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 36.25it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 36.30it/s]
+ 55%|█████▌    | 44/80 [00:01<00:00, 36.33it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.15it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.11it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.21it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.28it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.34it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.37it/s]
+ 90%|█████████ | 72/80 [00:01<00:00, 36.40it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.41it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.44it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.09it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_fear_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_canadian_english.wav
+[INFO] Generating + evaluating: filipino_fear
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=fear, Accent=filipino
+[INFO] Emotion-specific voice folder: custom_fear
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.28it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.36it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.49it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.56it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.48it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.49it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.47it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00,  9.94it/s]
+ 50%|█████     | 3/6 [00:00<00:00,  8.56it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  7.97it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.65it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.45it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.86it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.61it/s]
+ 10%|█         | 8/80 [00:00<00:02, 33.81it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.64it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.09it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.35it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.52it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.64it/s]
+ 40%|████      | 32/80 [00:00<00:01, 35.71it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 34.38it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 32.55it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 32.34it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 33.35it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 34.09it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 34.65it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.08it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 35.38it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 35.61it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 35.79it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 35.80it/s]
+100%|██████████| 80/80 [00:02<00:00, 35.91it/s]
+100%|██████████| 80/80 [00:02<00:00, 34.83it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_fear_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_filipino.wav
+[INFO] Generating + evaluating: nigerian_accent_fear
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=fear, Accent=nigerian_accent
+[INFO] Emotion-specific voice folder: custom_fear
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] /home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.44it/s]
+ 50%|█████     | 3/6 [00:02<00:01,  1.51it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.48it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.51it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.49it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.48it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.18it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.13it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.79it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.58it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.91it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  4%|▍         | 3/80 [00:00<00:03, 23.59it/s]
+  9%|▉         | 7/80 [00:00<00:02, 28.74it/s]
+ 14%|█▍        | 11/80 [00:00<00:02, 31.57it/s]
+ 19%|█▉        | 15/80 [00:00<00:01, 32.94it/s]
+ 24%|██▍       | 19/80 [00:00<00:01, 33.78it/s]
+ 29%|██▉       | 23/80 [00:00<00:01, 34.29it/s]
+ 34%|███▍      | 27/80 [00:00<00:01, 34.61it/s]
+ 39%|███▉      | 31/80 [00:00<00:01, 34.85it/s]
+ 44%|████▍     | 35/80 [00:01<00:01, 35.03it/s]
+ 49%|████▉     | 39/80 [00:01<00:01, 35.16it/s]
+ 54%|█████▍    | 43/80 [00:01<00:01, 35.16it/s]
+ 59%|█████▉    | 47/80 [00:01<00:00, 35.28it/s]
+ 64%|██████▍   | 51/80 [00:01<00:00, 35.39it/s]
+ 69%|██████▉   | 55/80 [00:01<00:00, 35.44it/s]
+ 74%|███████▍  | 59/80 [00:01<00:00, 35.50it/s]
+ 79%|███████▉  | 63/80 [00:01<00:00, 35.52it/s]
+ 84%|████████▍ | 67/80 [00:01<00:00, 35.52it/s]
+ 89%|████████▉ | 71/80 [00:02<00:00, 35.50it/s]
+ 94%|█████████▍| 75/80 [00:02<00:00, 35.47it/s]
+ 99%|█████████▉| 79/80 [00:02<00:00, 35.44it/s]
+100%|██████████| 80/80 [00:02<00:00, 34.59it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_fear_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_nigerian_accent.wav
+[INFO] Generating + evaluating: scottish_english_fear
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=fear, Accent=scottish_english
+[INFO] Emotion-specific voice folder: custom_fear
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_g', 'wav2vec2.encoder.pos_conv_embed.conv.weight_v']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.45it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.47it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.54it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.52it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.52it/s]
+100%|██████████| 6/6 [00:03<00:00,  1.50it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.27it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.17it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.85it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.63it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.96it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 32.07it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.31it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 35.09it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.52it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.79it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.96it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 36.07it/s]
+ 40%|████      | 32/80 [00:00<00:01, 36.16it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 36.23it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 36.28it/s]
+ 55%|█████▌    | 44/80 [00:01<00:00, 36.32it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 36.36it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 36.38it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 36.37it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 36.39it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 36.39it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 36.38it/s]
+ 90%|█████████ | 72/80 [00:01<00:00, 36.40it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 36.40it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.42it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.10it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_fear_0.wav
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_scottish_english.wav
+[INFO] Generating + evaluating: united_states_english_fear
+[INFO] Inputs: Text=This place is too far, Audio=/home/m23csa017/adaptive-voice-cloning/openvoice/tortoise-tts/tortoise-tts/results/1001_0.wav, Emotion=fear, Accent=united_states_english
+[INFO] Emotion-specific voice folder: custom_fear
+[STDOUT] Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Ignored unknown kwarg option normalize
+Generating autoregressive samples..
+Computing best candidates using CLVP
+Transforming autoregressive outputs into audio..
+
+[STDERR] Some weights of the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli were not used when initializing Wav2Vec2ForCTC: ['wav2vec2.encoder.pos_conv_embed.conv.weight_v', 'wav2vec2.encoder.pos_conv_embed.conv.weight_g']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at jbetker/wav2vec2-large-robust-ft-libritts-voxpopuli and are newly initialized: ['wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original1', 'wav2vec2.encoder.pos_conv_embed.conv.parametrizations.weight.original0']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/m23csa017/venv/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 17%|█▋        | 1/6 [00:00<00:03,  1.25it/s]
+ 33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]
+ 50%|█████     | 3/6 [00:02<00:02,  1.46it/s]
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]
+ 83%|████████▎ | 5/6 [00:03<00:00,  1.50it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.45it/s]
+100%|██████████| 6/6 [00:04<00:00,  1.45it/s]
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+ 33%|███▎      | 2/6 [00:00<00:00, 10.25it/s]
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.17it/s]
+ 83%|████████▎ | 5/6 [00:00<00:00,  7.84it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.62it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.95it/s]
+
+  0%|          | 0/80 [00:00<?, ?it/s]
+  5%|▌         | 4/80 [00:00<00:02, 31.77it/s]
+ 10%|█         | 8/80 [00:00<00:02, 34.04it/s]
+ 15%|█▌        | 12/80 [00:00<00:01, 34.85it/s]
+ 20%|██        | 16/80 [00:00<00:01, 35.27it/s]
+ 25%|██▌       | 20/80 [00:00<00:01, 35.50it/s]
+ 30%|███       | 24/80 [00:00<00:01, 35.63it/s]
+ 35%|███▌      | 28/80 [00:00<00:01, 35.71it/s]
+ 40%|████      | 32/80 [00:00<00:01, 34.09it/s]
+ 45%|████▌     | 36/80 [00:01<00:01, 32.40it/s]
+ 50%|█████     | 40/80 [00:01<00:01, 33.07it/s]
+ 55%|█████▌    | 44/80 [00:01<00:01, 33.88it/s]
+ 60%|██████    | 48/80 [00:01<00:00, 34.47it/s]
+ 65%|██████▌   | 52/80 [00:01<00:00, 34.90it/s]
+ 70%|███████   | 56/80 [00:01<00:00, 35.20it/s]
+ 75%|███████▌  | 60/80 [00:01<00:00, 35.41it/s]
+ 80%|████████  | 64/80 [00:01<00:00, 35.58it/s]
+ 85%|████████▌ | 68/80 [00:01<00:00, 35.70it/s]
+ 90%|█████████ | 72/80 [00:02<00:00, 35.82it/s]
+ 95%|█████████▌| 76/80 [00:02<00:00, 35.90it/s]
+100%|██████████| 80/80 [00:02<00:00, 36.00it/s]
+100%|██████████| 80/80 [00:02<00:00, 34.98it/s]
+
+[INFO] Emotion audio generated: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/custom_fear_0.wav
+Loaded checkpoint '/home/m23csa017/adaptive-voice-cloning/openvoice/checkpoints/checkpoints/checkpoints/converter/checkpoint.pth'
+missing/unexpected keys: [] []
+Audio too short, fail to add watermark
+[INFO] Accent applied: /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/accented_united_states_english.wav
+[INFO] Saved results to /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/evaluation_results.json
+[INFO] Wrote similarity table to /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/similarity_table.txt
+[INFO] Wrote mcd table to /home/m23csa017/adaptive-voice-cloning/evaluation_outputs/mcd_table.txt
